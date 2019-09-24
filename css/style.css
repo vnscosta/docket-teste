@@ -1,0 +1,180 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+h1{
+    margin: 0;
+}
+.logo{
+    margin-left: 30px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    margin-right: 60px;
+}
+.menu__item{
+    margin-left: 36px;
+}
+.menu__item a{
+    font-size: 14px;
+    color: #F6C98C;
+    text-transform: uppercase;
+    text-decoration: none
+}
+.menu__item--btn a{
+    padding: 9px 16px;
+    border: 1px solid #F6C98C;
+    border-radius: 5px;
+}
+
+/* BANNER */
+.banner{
+    background: url('../img/bg_banner.jpg') no-repeat top center;
+    background-size: cover;
+    height: 695px;
+}
+.banner__mask{
+    background: transparent linear-gradient(117deg, #52257B 0%, #438199 100%) 0% 0% no-repeat padding-box;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.banner__content{
+    position: absolute;
+    top: 235px;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+}
+.banner__content h2{
+    font-size: 46px;
+    font-weight: normal;
+    margin: 0;
+}
+.banner__content p{
+    font-size: 19px;
+    margin-top: 10px;
+}
+.buscar input{
+    display: block;
+    background: none;
+    width: 600px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    margin: 50px auto;
+    padding: 15px 20px; 
+}
+.buscar input::placeholder{
+    color: #FFF
+}
+.buscar button{
+    background: #F6A02B;
+    box-shadow: 0px 2px 5px #00000040;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 15px 45px;
+    border: 0;
+    color: #FFF;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+/* COMO FUNCIONA */
+.about{
+    padding: 50px 0;
+    text-align: center;
+}
+.about h3{
+    font-size: 40px;
+    color: #5A5789;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 60px auto;
+}
+.cards__item{
+    max-width: 30%;
+}
+.cards__item h4{
+    font-size: 24px;
+    color: #5A5789;
+}
+.cards__item p{
+    font-size: 16px;
+    color: #616161;
+}
+
+/* MEDIA TESTIMONIALS */
+.media{
+    padding: 100px 0;
+    background: #E2D5FC 0% 0% no-repeat padding-box;
+    text-align: center;
+}
+.media h5{
+    font-size: 36px;
+    font-weight: normal;
+    color: #212121;
+    margin: 0;
+}
+.media p{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.media__box{
+    display: flex !important;
+    justify-content: center;
+}
+.media__item{
+    width: 500px;
+    height: 300px;
+    background-color: #FFF;
+    border: 1px solid red;
+}
+.slick-next, .slick-prev:hover{
+    right: 20px;
+    background: url('../img/slick-next.png') center no-repeat;
+}
+.slick-prev, .slick-prev:hover{
+    left: 20px;
+    background: url('../img/slick-prev.png') center no-repeat;
+
+}
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 50px;
+    height: 90px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: 2;
+}
+.slick-prev:before, .slick-next:before{
+    content: '';
+}
