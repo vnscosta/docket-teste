@@ -28,6 +28,10 @@ h1{
     display: flex;
     list-style: none;
     margin-right: 60px;
+    transition: 1s;
+}
+.menu__mobile--btn{
+    display: none;
 }
 .menu__item{
     margin-left: 36px;
@@ -216,6 +220,12 @@ h1{
 .slick-prev:before, .slick-next:before{
     content: '';
 }
+.slick-dots{
+    bottom: -40px;
+}
+.slick-dots li button:before{
+    font-size: 10px;
+}
 
 /* ESTATISTICAS */
 .setores{
@@ -261,7 +271,6 @@ h1{
 
 footer{
     padding: 60px 45px;
-    height: 320px;
     background: transparent linear-gradient(103deg, #52257B 0%, #438199 100%) 0% 0% no-repeat padding-box;
 }
 .footer__content{
@@ -304,4 +313,129 @@ footer{
 }
 .footer__menu--social li{
     margin-right: 10px;
+}
+
+@media (max-width: 768px){
+    nav{
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        transition: .5s;
+    }
+    .menu__mobile--btn{
+        display: flex;
+        flex-wrap: wrap;
+        width: 40px;
+        position: absolute;
+        right: 20px;
+        transition: .3s;
+        z-index: 999;
+    }
+    .menu__mobile--btn span{
+        width: 100%;
+        height: 3px;
+        background-color: #FFF;
+        margin-bottom: 5px;
+    }
+    .logo{
+        position: relative;
+        z-index: 999;
+    }
+    .banner__content{
+        padding: 0 15px;
+        width: unset;
+    }
+    .banner__content h2{
+        font-size: 42px;
+    }
+    .buscar input{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .buscar button{
+        margin-top: 0;
+    }
+    .about{
+        padding: 20px 0;
+    }
+    .cards__item{
+        max-width: 100%;
+        padding: 0 15px;
+        margin-bottom: 20px;
+    }
+    .cards__item p{
+        font-size: 18px;
+    }
+    .media{
+        padding: 50px 0;
+    }
+    .setores__content{
+        padding: 50px 0;
+    }
+    .setores h3{
+        text-align: center;
+    }
+    .setores__list ul{
+        max-width: 100%;
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+    footer{
+        padding: 30px 15px;
+    }
+    .footer__content{
+        justify-content: space-between;
+    }
+    .footer__logo{
+        padding: 20px;
+        margin: 0;
+        border: 0;
+    }
+    .footer__menu{
+        margin: 0;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu .menu__item{
+        margin-top: 30px;
+    }
+    .menu.active{
+        display: block;
+        list-style: none;
+        margin-right: 60px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: right;
+        width: 100%;
+        margin: 0;
+        background-color: #5A5789;
+        padding: 80px 20px 50px 20px;
+    }
+    .menu__mobile--btn.active span{
+        transition: .3s;
+    }
+    .menu__mobile--btn.active span.top{
+        transform: rotate(45deg);
+        position: relative;
+        top: 8px;
+    }
+    .menu__mobile--btn.active span.mid{
+        opacity: 0;
+    }
+    .menu__mobile--btn.active span.bottom{
+        transform: rotate(-45deg);
+        position: relative;
+        top: -8px;
+    }
+    .menu__item--btn a{
+        background-color: #F6A02B;
+        box-shadow: 0px 2px 5px #00000040;
+        color: #FFF;
+        border-radius: 5px
+    }
 }
